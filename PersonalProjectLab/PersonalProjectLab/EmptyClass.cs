@@ -1,65 +1,62 @@
 ﻿using System;
 namespace PersonalProjectLab
 {
-    public class EmptyClass
-    {
-        public EmptyClass()
-        {
-        }
-       
-	
-		
 
-			private double num1;
-			private double num2;
-			private string op;
+	public class Class
+	{
 
-			// constructor 
-			
+		private double num1;
+		private double num2;
+		private string op;
 
-			public double addition(double a, double b)
+		// constructor 
+		public Class()
+		{
+
+		}
+
+		public double addition(double a, double b)
+		{
+			double result = a + b;
+			return result;
+		}
+
+		public double multiplication(double a, double b)
+		{
+			double result = a * b;
+			return result;
+		}
+
+		public double division(double a, double b)
+		{
+			double result = a / b;
+			return result;
+		}
+
+		public void compute(double a, double b, string c)
+		{
+			double result;
+			if (c.Equals("+"))
 			{
-				double result = a + b;
-				return result;
+				result = addition(a, b);
+				Console.WriteLine("resul of your operation is " + result);
 			}
-
-			public double multiplication(double a, double b)
+			else if (c.Equals("*"))
 			{
-				double result = a * b;
-				return result;
+				result = multiplication(a, b);
+				Console.WriteLine("result of your multiplication is " + result);
 			}
-
-			public double division(double a, double b)
+			else if (c.Equals("/"))
 			{
-				double result = a / b;
-				return result;
+				result = division(a, b);
+				Console.WriteLine("result of your operation is " + result);
 			}
-
-			public void compute(double a, double b, string c)
+			else
 			{
-				double result;
-				if (c.Equals("+"))
-				{
-					result = addition(a, b);
-					Console.WriteLine("resul of your operation is " + result);
-				}
-				else if (c.Equals("*"))
-				{
-					result = multiplication(a, b);
-					Console.WriteLine("result of your multiplication is " + result);
-				}
-				else if (c.Equals("/"))
-				{
-					result = division(a, b);
-					Console.WriteLine("result of your operation is " + result);
-				}
-				else
-				{
-					Console.WriteLine("error: wrong input ");
-				}
+				Console.WriteLine("error: wrong input ");
 			}
-
 		}
 
 	}
 
+}

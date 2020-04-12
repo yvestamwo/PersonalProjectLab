@@ -1,4 +1,6 @@
-﻿using System;
+﻿
+
+using System;
 
 namespace PersonalProjectLab
 {
@@ -9,7 +11,7 @@ namespace PersonalProjectLab
             int number1 = 0;
             double number2 = 0;
             string input3 = "";
-            EmptyClass obj = new EmptyClass();
+            Class obj = new Class();
             bool boo = false;
             // Check user inputs 
             do
@@ -49,4 +51,3 @@ namespace PersonalProjectLab
         }
     }
 }
-        
