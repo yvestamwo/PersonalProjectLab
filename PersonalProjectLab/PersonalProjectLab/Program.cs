@@ -8,7 +8,7 @@ namespace PersonalProjectLab
     {
         static void Main(string[] args)
         {
-            int number1 = 0;
+            double number1 = 0;
             double number2 = 0;
             string input3 = "";
             Class obj = new Class();
@@ -39,13 +39,13 @@ namespace PersonalProjectLab
                 }
                 catch (Exception e)
                 {
-                    boo = true;
+                    boo = false;
                     Console.WriteLine(e.Message);
                     Console.WriteLine("reenter your data");
                 }
             } while (boo);
 
-            // Computer the operation
+            // Compute the operation
             obj.compute(number1, number2, input3);
 
         }
